@@ -133,6 +133,9 @@ syn keyword pythonStatement     global assert
 syn keyword pythonStatement     lambda
 syn keyword pythonStatement     with
 syn keyword pythonStatement     def class nextgroup=pythonFunction skipwhite
+
+syn keyword pythonClassVar    self cls
+
 syn keyword pythonRepeat        for while
 syn keyword pythonConditional   if elif else
 " Cython: removed
@@ -585,6 +588,7 @@ if version >= 508 || !exists("did_python_syn_inits")
   HiLink pythonBuiltinFunc      Function
 
   HiLink pythonExClass          Structure
+  HiLink pythonClassVar         Identifier
 
   delcommand HiLink
 endif
