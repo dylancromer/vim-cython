@@ -135,6 +135,7 @@ syn keyword pythonStatement     with
 syn keyword pythonStatement     def class nextgroup=pythonFunction skipwhite
 
 syn keyword pythonClassVar    self cls
+syn match pythonOperator        '\V=\|-\|+\|*\|@\|/\|%\|&\||\|^\|~\|<\|>\|!='
 
 syn keyword pythonRepeat        for while
 syn keyword pythonConditional   if elif else
